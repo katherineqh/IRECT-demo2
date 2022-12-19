@@ -1,0 +1,676 @@
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+section {
+  overflow: hidden;
+}
+
+/* Sections Header
+--------------------------------*/
+.section-header {
+  h3 {
+    font-size: 36px;
+    color: $secondary;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+  }
+
+  p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: $secondary-light;
+    width: 50%;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
+
+/* Section with background
+--------------------------------*/
+.section-bg {
+  background: lighten($primary-light, 24%);
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 20px 0;
+  background-color: lighten($primary, 48);
+  min-height: 40px;
+  margin-top: 80px;
+
+  @media (max-width: 992px) {
+    margin-top: 60px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+    @media (max-width: 992px) {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+
+    li + li {
+      padding-left: 10px;
+    }
+
+    li + li::before {
+      display: inline-block;
+      padding-right: 10px;
+      color: #6c757d;
+      content: "/";
+    }
+  }
+
+  @media (max-width: 768px) {
+    .d-flex {
+      display: block !important;
+    }
+
+    ol {
+      display: block;
+      li {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/* About Us Section
+--------------------------------*/
+#about {
+  
+  padding: 60px 100px;
+  background-image: url("https://katherineqh.github.io/IRECT/assets/img/irectcar3.jpg");
+  background-repeat:repeat-y;
+  // opacity: 0.5;
+  // width: 100%;
+  height: 500px;
+  background-size:cover;
+
+  ::before {
+    content: "";
+    background-image: url("https://katherineqh.github.io/IRECT/assets/img/irectcar3.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 0.8;
+
+  }
+
+
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 10px;
+
+    // opacity: 0.5;
+  //   .background {
+  // //     margin: 0px 0px;
+  // //     padding: 0px 0px;
+
+  // // opacity: 0.41;
+  // //   mix-blend-mode: lighten;
+  // //   transition:0.3s, border-radius 0.3s, opacity 0.3s;
+   
+  //   }
+  .box {
+    padding: 30px 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 10px 40px 10px;
+   background-color: #f7f0e5;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    opacity: 0.6;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+ 
+
+  // align-content: flex-start;
+  // background-color: #FDF7EDC7;
+padding: 20px;
+  }
+
+
+    .text-dark {
+text-align: center;
+      color: #5E3B26;
+      margin: 20px 10px;
+      padding: 0 0px;
+    }
+
+    .title {
+      color: #5E3B26;
+      font-weight: 700;
+      font-size: 32px;
+    }
+
+    p {
+      line-height: 26px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .icon-box {
+      background: #fff;
+      background-size: cover;
+      padding: 0 0 30px 0;
+
+     
+      &:hover {
+        .icon {
+          background: $primary;
+          i {
+            color: #fff;
+          }
+        }
+      }
+
+      .title {
+        margin-left: 80px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        font-size: 18px;
+        a {
+          color: $secondary;
+        }
+      }
+
+    
+    }
+  }
+
+  .about-extra {
+    padding-top: 60px;
+
+    h5 {
+      padding: 100px 150px;
+      margin: 30px;
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+
+
+/* Services Section
+--------------------------------*/
+#services,#Kitchen,
+#Wardrobes,
+#ShowerScreens,#about{
+  padding: 60px 0 40px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+
+  .box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 10px 40px 10px;
+    background: $white;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  .icon {
+    position: absolute;
+    left: -15px;
+    top: calc(50% - 32px);
+
+    i {
+      font-size: 64px;
+      line-height: 0;
+      transition: 0.5s;
+    }
+  }
+
+  .title {
+    margin-left: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 25px;
+    a {
+      color: #111;
+    }
+  }
+
+  h4 {
+    margin-left: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+    a {
+      color: #111;
+    }
+  }
+
+  .box:hover .title a {
+    color: $primary;
+  }
+
+  .description {
+    font-size: 14px;
+    margin-left: 40px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+}
+
+#why-us {
+  padding: 60px 0;
+  // background: darken($primary, 20%);
+  .section-header {
+    h3,
+    p {
+      color: $white;
+    }
+  }
+
+  .card {
+    background: darken($primary, 22%);
+    border-color: darken($primary, 22%);
+    border-radius: 10px;
+    margin: 0 15px;
+    padding: 15px 0;
+    text-align: center;
+    color: $white;
+    transition: 0.3s ease-in-out;
+    height: 40%;
+
+    @media (max-width: 991px) {
+      margin: 0;
+    }
+
+    &:hover {
+      background: darken($primary, 26%);
+      border-color: darken($primary, 26%);
+    }
+
+    i {
+      font-size: 48px;
+      padding-top: 15px;
+      color: lighten($primary-light, 15%);
+    }
+
+    h5 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 15px;
+      color: lighten($primary-light, 20%);
+    }
+
+    .readmore {
+      color: $white;
+      font-weight: 600;
+      display: inline-block;
+      transition: 0.3s ease-in-out;
+      border-bottom: darken($primary, 22%) solid 2px;
+      &:hover {
+        border-bottom: $white solid 2px;
+      }
+    }
+  }
+
+  .counters {
+    padding-top: 40px;
+    span {
+      font-family: $font-secondary;
+      font-weight: bold;
+      font-size: 48px;
+      display: block;
+      color: $white;
+    }
+
+    p {
+      padding: 0;
+      margin: 0 0 20px 0;
+      font-family: $font-secondary;
+      font-size: 14px;
+      color: lighten($primary, 40%);
+    }
+  }
+}
+
+/* Kitchen Section
+--------------------------------*/
+#Kitchen,
+#Wardrobes,
+#ShowerScreens{
+  padding: 70px 50px;
+  // box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+
+  #portfolio-flters {
+    padding: 0;
+    margin: 5px 0 25px 0;
+    list-style: none;
+    text-align: center;
+    img {
+      height: 100px;
+    }
+
+    li {
+      cursor: pointer;
+      margin: 15px 15px 15px 0;
+      display: inline-block;
+      padding: 6px 20px;
+      font-size: 12px;
+      line-height: 20px;
+      color: $primary;
+      border-radius: 50px;
+      text-transform: uppercase;
+      background: lighten($primary-light, 24%);
+      margin-bottom: 5px;
+      transition: all 0.3s ease-in-out;
+
+     
+
+      &:hover,
+      &.filter-active {
+        background: $primary;
+        color: #fff;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .portfolio-container {
+    padding: 0px 0px;
+  }
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    margin: 0;
+
+  
+    .portfolio-wrap {
+      overflow: hidden;
+      position: relative;
+      border-radius: 6px;
+      margin: 20px 0px;
+
+      &:hover {
+        img {
+          opacity: 0.4;
+          transition: 0.3s;
+        }
+      }
+
+     
+
+        h4 {
+          font-size: 22px;
+          line-height: 1px;
+          font-weight: 700;
+          margin-bottom: 14px;
+          padding-bottom: 0;
+          a {
+            color: $white;
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+        p {
+          padding: 0;
+          margin: 0;
+          color: lighten($primary-light, 22%);
+          font-weight: 500;
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+
+        .link-preview,
+        .link-details {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 1;
+          width: 36px;
+          height: 36px;
+          background: $primary;
+          border-radius: 50%;
+          margin: 10px 4px 0 4px;
+
+          i {
+            font-size: 22px;
+            color: $white;
+            line-height: 0;
+          }
+          &:hover {
+            background: lighten($primary, 10%);
+            i {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        background: darken($primary, 30%);
+        .portfolio-info {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+
+
+/* Clients Section
+--------------------------------*/
+#clients {
+  padding: 60px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+
+  .clients-wrap {
+    border-top: 1px solid lighten($primary, 42%);
+    border-left: 1px solid lighten($primary, 42%);
+    margin-bottom: 30px;
+  }
+
+  .client-logo {
+    padding: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid lighten($primary, 42%);
+    border-bottom: 1px solid lighten($primary, 42%);
+    overflow: hidden;
+    background: $white;
+    height: 160px;
+    &:hover img {
+      transform: scale(1.2);
+    }
+  }
+
+  img {
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+/* Contact Section
+--------------------------------*/
+#contact {
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+  overflow: hidden;
+
+  .section-header {
+    padding-bottom: 30px;
+  }
+
+  .contact-about {
+    h3 {
+      font-size: 36px;
+      margin: 0 0 10px 0;
+      padding: 0;
+      line-height: 1;
+      font-family: $font-primary;
+      font-weight: 300;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: $primary;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      font-family: $font-primary;
+      color: #888;
+    }
+  }
+
+  .social-links {
+    padding-bottom: 20px;
+    a {
+      font-size: 18px;
+      display: inline-block;
+      background: #fff;
+      color: $primary;
+      line-height: 1;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 50%;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+      border: 1px solid $primary;
+      &:hover {
+        background: $primary;
+        color: #fff;
+      }
+    }
+  }
+
+  .info {
+    color: $secondary;
+
+    i {
+      font-size: 32px;
+      color: $primary;
+      float: left;
+      line-height: 0;
+    }
+
+    p {
+      padding: 0 0 10px 36px;
+      line-height: 28px;
+      font-size: 14px;
+    }
+  }
+
+  .php-email-form {
+    .error-message {
+      display: none;
+      color: #fff;
+      background: #ed3c0d;
+      text-align: left;
+      padding: 15px;
+      font-weight: 600;
+      & br + br {
+        margin-top: 25px;
+      }
+    }
+
+    .sent-message {
+      display: none;
+      color: #fff;
+      background: #18d26e;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+    }
+
+    .loading {
+      display: none;
+      background: #fff;
+      text-align: center;
+      padding: 15px;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px -6px 0;
+        border: 3px solid #18d26e;
+        border-top-color: #eee;
+        animation: animate-loading 1s linear infinite;
+      }
+    }
+
+    input,
+    textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+      &:focus {
+        border-color: $primary;
+      }
+    }
+
+    input {
+      padding: 10px 15px;
+    }
+
+    textarea {
+      padding: 12px 15px;
+    }
+
+    button[type="submit"] {
+      background: $primary;
+      border: 0;
+      border-radius: 20px;
+      padding: 8px 30px;
+      color: #fff;
+      transition: 0.3s;
+      &:hover {
+        background: $primary-dark;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

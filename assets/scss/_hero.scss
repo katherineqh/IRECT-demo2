@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  // position: relative;
+  // background: url('../img/hero-bg.png') center bottom no-repeat ;
+  // background-size: cover;
+  // padding: px 0 120px 0;
+  
+  @media screen and (min-width:640px){
+    #mycarousel img{
+        display: none;
+    }
+    #mycarousel .carousel-inner .carousel-bg1{
+        background: url(/assets/img/hero-img1.png) no-repeat center center;
+        width: 100%;
+        height: 800px;
+        background-size:cover;
+    }
+    #mycarousel .carousel-inner .carousel-bg2{
+        background: url(/assets/img/hero-img2.png) no-repeat center center;
+        width: 100%;
+        height: 800px;
+        background-size:cover;
+    }
+    #mycarousel .carousel-inner .carousel-bg3{
+        background: url(/assets/img/hero-img3.png) no-repeat center center;
+        width: 100%;
+        height: 800px;
+        background-size:cover;
+    }
+}
+@media screen and (max-width:640px){
+    #mycarousel img{
+        display: block;
+    }
+}
+
+   h3 {
+    font-family: Montserrat, sans-serif;
+    color: #212529
+   }
+   p {
+    color: #212529
+   }
+    
+  }
+
+
